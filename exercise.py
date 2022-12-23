@@ -10,7 +10,7 @@ def factorial(n):
 
     return f
 
-fact=factorial(1)
+fact=factorial(5)
 print(fact)
 
 # ------------Prime number----------------

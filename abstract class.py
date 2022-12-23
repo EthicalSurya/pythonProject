@@ -32,3 +32,14 @@ class Rectangle(Shape):
 rect1=Rectangle()
 print(rect1.printarea())
 print(rect1.sides)
+
+n= int(input("Enter any num"))
+
+if n%3 is 0 and n%5 is 0:
+    print("Zoom")
+elif n%3 is 0:
+    print("Zip")
+elif n%5 is 0:
+    print("Zap")
+else:
+    print("invalid")

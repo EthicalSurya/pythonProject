@@ -1,40 +1,23 @@
-n=18
-number_of_guesses=1
-print("Number of guesses is limited to only 9 times: ")
-while (number_of_guesses<=9):
-    guess_number = int(input("Guess the number :\n"))
-    if guess_number<18:
-        print("you enter less number please input greater number.\n")
-    elif guess_number>18:
-        print("you enter greater number please input smaller number.\n ")
-    else:
-        print("you won\n")
-        print(number_of_guesses,"no.of guesses he took to finish.")
-        break
-    print(9-number_of_guesses,"no. of guesses left")
-    number_of_guesses = number_of_guesses + 1
-if(number_of_guesses>9):
-    print("Game Over")
-    print("The correct no is:",n)
+n= int(input("Enter any num"))
+
+for i in range(1,11):
+    print(f"{n} X {i} = {n*i}")
 
 
-'''i=0
-while(True):
-   if i+1<5:
-       i+=1
-       continue
-   print(i+1)
-   if i==44:
-       break
-   i+=1
+num=int(input("Enter any num"))
+m=1
+while m<=10:
+    print(f"{num} X {m} = {num*m}")
+    m+=1
 
-i=0
-while(i<=10):
-    i+=1
-    if i==5:
-        continue
-    print(i)
-    if i==9:
-        break'''
+n=int(input("Enter any num"))
+factorial=1
+for i in range(1,n+1): #or for i in range(n)
+    factorial = factorial*i  #or factorial=factorial*(i+1)
+print(f"The factorial of {n} is {factorial}")
 
+# Pattern without inner loops
+n=4
+for i in range(4):
+    print("*" * (i+1))
 

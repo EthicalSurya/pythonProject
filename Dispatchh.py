@@ -8,4 +8,4 @@ def add(a,b,c):
 def add(a,b):
     print(a+b)
 
-add(2,7)
+add(2,7,8)

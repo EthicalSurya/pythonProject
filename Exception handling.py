@@ -43,7 +43,7 @@ def handling(a,b):
         print("The solution is printed")
 
 
-handling(6,5)
+handling(6,0)
 
 
 

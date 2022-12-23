@@ -198,3 +198,65 @@ a=arr.array("i",[2,3,4,5])
 
 print(a[1])
 
+# -----Guess the number-------------------
+actual_num=45
+attempts=0
+
+while True:
+
+    guess=int(input("Guess the no"))
+    attempts += 1
+    if guess > actual_num:
+        print("Your gues was too high")
+    elif guess < actual_num:
+        print("Your gues was too low")
+    else:
+        print(f"you guessed the num in {attempts} attempt(s)")
+        break
+
+    if attempts>9:
+        print("game over")
+        break
+print("Thanks for playing")
+
+n= int(input("Enter a dig to check for prime"))
+
+for i in range(2,n):
+    if n%i is 0:
+        print(f"{n} is not a prime")
+        break
+else:
+    print("{} is prime".format(n))
+
+
+def display(Num):
+    if Num % 3 == 0 and Num % 5 == 0:
+        print("Zoom")
+
+    elif Num % 3 == 0:
+        print("Zip")
+
+    elif Num % 5 == 0:
+        print("Zap")
+
+    else:
+        print("Invalid")
+
+
+# Main code
+if __name__ == "__main__":
+    Num = 9
+
+    # Function call
+    display(Num)
+
+    Num = 10
+    display(Num)
+
+    Num = 15
+    display(Num)
+
+    Num = 19
+    display(Num)
+
+
